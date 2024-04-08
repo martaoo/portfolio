@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatiable"content="IE=edge">
+    <meta name="veiwport" content="width=device=width,intial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet"href="style.css">
+    <scrpit src="https://kit.fontawesome.com/c4254e24a8.js"crossorigin="anonymous"></scrpit>
+ </head>
+ <body bgcolor=red>
+   <div id=" header">
+     <div class="container">
+        <nav>
+            <img src="ooo.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                
+                <li><a href="#">About</a></li>
+                
+                <li><a href="#">Services</a></li>
+                
+                <li><a href="#">Portfolio</a></li>
+                
+                <li><a href="#">Contact</a></li>
+                
+           
+            </ul>
+        </nav>
+        <div calss="header-text">
+           <p><b> Website designer</b></p>
+           <h1>Hi,I'm<span> Marta </span>Ejigu </br> From Bahirdar University </br>Ethiopia</h1>
+        </div>
+     </div>
+   </div>
+   <div id="about">
+      <div class="container">
+        <div class-"row">
+          <div class="about-col-1">
+            <img src="marti.jpg"alt="have no image" width=100px>
+       
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p> ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg</p>
+            <div class="tab-titles">
+               <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+               <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+               <p class="tab-links"onclick="opentab('Education')">Education</p>
+              
+            </div>
+            <div class="tab-contents active-tab"id="Skills">
+               <ul>
+                 <li><span> ui/ux</span></br> desining web /app interfaces </li>
+                 <li><span> web development</span></br> web app interfaces </li>
+                 <li><span> app development</span></br> bulding android app interfaces </li>
+               <ul>
+            </div>
+            <div class="tab-contents" id="Education">
+               <ul>
+                 <li><span> 2022-current</span></br> software traning at bdu universty </li>
+                 <li><span> 2023-current</span></br> studing mangement at blue mark collage </li>
+                 
+               <ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                 <li>none</li>
+                 
+               <ul>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    
+   </div>
+ <!------------------------services----------->
+ <div id="services">
+   <div class="container">
+     <h1 class="sub-title">My Services</h1>
+     <div class="services-list">
+       <div>
+         <i class="fas fa-crop-alt"></i>
+         <h2>web desining</h2>
+         <p> adhrjhjgmtuyjwnjwsj</br>fgyrthshvfqeierurwejcnmcnamn</br>fhfgyreusjjncmcnvbfmhgm</br>hghdjhdjhjdhj</p>
+         <a href="#" >Learn More </a>
+       </div>
+       <div>
+         
+        <i class="fas fa-code"></i>   
+        <h2>ui/ux design</h2>
+         <p> adhrjhjgmtuyjwnjwsj</br>fgyrthshvfqeierurwejcnmcnamn</br>fhfgyreusjjncmcnvbfmhgm</br>hghdjhdjhjdhj</p>
+         <a href="#" >Learn More </a>
+       </div>
+       <div>
+         <i class="fas fa-app-store"></i> 
+         <h2>app desining</h2>
+         <p> adhrjhjgmtuyjwnjwsj</br>fgyrthshvfqeierurwejcnmcnamn</br>fhfgyreusjjncmcnvbfmhgm</br>hghdjhdjhjdhj</p>
+         <a href="#" >Learn More </a>
+       </div>
+
+   </div>
+ </div>
+ <div id="contact">
+   <div class ="container">
+     <div class="contact-left">
+       <h1 class="sub-title">Contact Me</h1>
+       <p>contact@example.com</P>
+       <p>0929465677<p/>
+       <div class="basr-social-share social">
+  <ul class="">
+	<li>
+	  <a class="facebook" href="">
+		<i class="fa fa-facebook"></i>
+			<span>Facebook</span>
+		</a>
+	</li>
+				
+	<li>
+	  <a class="instagram" href="">
+		<i class="fa fa-instagram"></i>
+			<span>instagram</span>
+	  </a>
+	</li>
+				
+	<li>
+		<a class="google" href="martaegigu378@gmail.com">
+		<i class="fa fa-google"></i>
+		<span>Google Plus</span>
+		</a>
+	</li>
+				
+	<li>
+	  <a class="linkedin" href="Marta Ejigu">
+		<i class="fa fa-linkedin"></i>
+		<span>Linkedin</span>
+		</a>
+		</li>
+				
+		<li>
+		<a class="git-hub" href="martoo">
+		<i class="fa fa-git-hub"></i>
+		<span>git-hub</span>
+		</a>
+		</li>
+				
+  </ul>
+</div>
+     </div>
+   </div>
+ </div>
+
+   <script>
+      var tablinks=document.getElementByclass("tab-links");
+      var tabcontents=document.getElementByclass("tab-contents");
+
+      function opentab(tabname)
+{
+ for(tablink of tablinks)
+ { 
+   tablink.classList.remove("active-link");
+} 
+  for(tabcontent of tabcontents)
+ { 
+   tabcontent.classList.remove("active-tab");
+}
+  event.currentTarget.classList.add("active-link");  
+  document.getElementById(tabname).classList.add("active-tab");
+       
+}
+   </script>
+ </body>
+
+</html>
